@@ -1,0 +1,58 @@
+{
+  "who-non-partner-sexual-violence.csv": {
+    "source": "who-npsv-countries",
+    "population": "Women 15+",
+    "period": "Since age 15; 2023 model edition",
+    "unit": "Percent; 95% uncertainty bounds",
+    "method": "Portal proportions multiplied by 100"
+  },
+  "unodc-recorded-rates.csv": {
+    "source": "unodc-workbook",
+    "population": "All sexes, all ages; national administrative returns",
+    "period": "2003\u20132024, availability varies",
+    "unit": "Recorded offences per 100,000 population",
+    "method": "Filter Violent offences / by type of offence / total sex and age / provided rates"
+  },
+  "england-wales-survey-trend.csv": {
+    "source": "ons-trend-2025",
+    "population": "People aged 16\u201359; England and Wales households",
+    "period": "Last year; surveys YE March 2005\u20132025",
+    "unit": "Percent",
+    "method": "Downloaded ONS chart CSV; missing year preserved"
+  },
+  "england-wales-age-2025.csv": {
+    "source": "ons-victims-2025-figure-3",
+    "population": "People aged 16+; England and Wales households",
+    "period": "Last year; YE March 2025",
+    "unit": "Percent",
+    "method": "Downloaded ONS chart CSV"
+  },
+  "england-wales-sexual-victimisation-2026.csv": {
+    "source": "ons-latest-2026",
+    "population": "People aged 16+; England and Wales households",
+    "period": "Last year; YE March 2026",
+    "unit": "Percent",
+    "method": "Transcribed from bulletin section 9; redesigned measure"
+  },
+  "unicef-childhood-regions.csv": {
+    "source": "unicef-release",
+    "population": "Girls and women alive at estimation",
+    "period": "Before age 18; 2024 release",
+    "unit": "Percent and millions of survivors",
+    "method": "Regional figures transcribed from official release"
+  },
+  "england-wales-childhood-2024.csv": {
+    "source": "ons-childhood-2024-figure-1",
+    "population": "Adults 18+; England and Wales households",
+    "period": "Before age 18; survey YE March 2024",
+    "unit": "Percent",
+    "method": "Sexual-abuse row from ONS chart CSV"
+  },
+  "rape-outcome-maturity.csv": {
+    "source": "home-office-outcomes-2026",
+    "population": "Recorded rape offence cohorts; England and Wales",
+    "period": "Cohorts YE March 2025 and 2026; July releases",
+    "unit": "Percent with charge/summons outcome at snapshot",
+    "method": "Transcribed from section 2.4; not convictions"
+  }
+}

@@ -1,0 +1,49 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - worldwide.qmd
+    - uk.qmd
+    - children.qmd
+    - justice.qmd
+    - methods.qmd
+    - medium/article.qmd
+  resources:
+    - data/**
+    - assets/**
+    - medium/images/**
+    - medium/PUBLISHING.txt
+website:
+  title: "Sexual violence in perspective"
+  description: "Worldwide evidence and a detailed UK view, with adults and childhood experiences presented separately."
+  navbar:
+    background: "#263e4c"
+    foreground: "#ffffff"
+    left:
+      - href: index.qmd
+        text: Overview
+      - href: worldwide.qmd
+        text: Worldwide
+      - href: uk.qmd
+        text: UK detail
+      - href: children.qmd
+        text: Childhood
+      - href: justice.qmd
+        text: Justice
+      - href: methods.qmd
+        text: Methods & sources
+  search: true
+  page-footer:
+    left: "Independent analysis by Kathryn Hopkins · Evidence checked 6 November 2026"
+    right: "Source-specific definitions and periods apply"
+format:
+  html:
+    theme: cosmo
+    css: assets/report.css
+    toc: true
+    toc-depth: 2
+    lang: en-GB
+    link-external-newwindow: true
+execute:
+  enabled: false

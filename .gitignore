@@ -1,0 +1,8 @@
+/_site/
+/.quarto/
+/__pycache__/
+
+**/*.quarto_ipynb
+
+/_unodc-explorer.html
+/_who-explorer.html

@@ -1,0 +1,74 @@
+---
+title: "Methods, sources and downloads"
+subtitle: "A reproducible evidence snapshot, with the limits visible."
+---
+
+## Edition and purpose
+
+Evidence was checked on **6 November 2026**. This is an independent descriptive report by Kathryn Hopkins. It combines official statistical sources without treating their different indicators as one global sexual-assault rate. Figures retain source periods rather than assigning everything to the retrieval year. The source code and raw snapshots remain in the local project; public downloads contain the processed data and source register.
+
+## Source register
+
+| Source | Used for | Selected edition / period |
+|---|---|---|
+| [WHO publication][who] and [data portal][who-data] | Modelled non-partner sexual violence, women 15+, since age 15 | 2023 estimates; surveys 2000–2023 |
+| [WHO definitions][who-definitions] | Perpetrator and population scope | Portal accessed 6 November 2026 |
+| [UNODC][unodc] | Recorded sexual offences per 100,000 population | Workbook dated 28 September 2026; available years 2003–2024 |
+| [ONS latest crime bulletin][ons-2026] | Redesigned sexual victimisation and recent police counts | Survey YE March 2026; police YE June 2026 |
+| [ONS prevalence/trends][ons-trends] | Former sexual-assault measure, 16–59 trend | YE March 2005–2025 |
+| [ONS victim characteristics][ons-victims] | Age patterns and other group/context information | YE March 2025 |
+| [ONS childhood bulletin][ons-child] | Adults recalling sexual abuse before 18 | Survey YE March 2024; released November 2025 |
+| [UNICEF][unicef] | Childhood rape/assault estimates and regions | 2024 publication; varied underlying survey dates |
+| [Home Office][home-office] | Rape charge/summons outcomes and follow-up | YE March 2026 release with 2025 cohort update |
+| [Department for Education][dfe] | Children identified in assessments and protection plans, England | YE March 2025 |
+| [Scottish Government][scotland] | Recorded sexual crimes, Scotland | 2025–26 |
+| [PSNI][psni] | Northern Ireland recorded offences | 2025–26 financial-year Table 1 |
+
+[Download source URLs and SHA-256 fingerprints](data/source-register.json) · [Edition metadata](data/edition.json).
+
+[Dataset definitions and transformation register](data/dataset-register.json) · [WHO requested/returned coverage](data/who-coverage.csv).
+
+## Transformations and checks
+
+1. **WHO:** retain age code `15_99`, the portal representation of 15 and over, for lifetime non-partner sexual violence. Multiply proportions and interval bounds by 100. Require ordered, non-missing interval bounds within 0–100 and unique country codes. Keep all 138 returned countries, not just chart examples. Preserve underlying-study metadata separately. The API age code is not interpreted as excluding people aged 100+ independently of WHO's published 15+ definition.
+2. **UNODC:** retain `Violent offences`, dimension `by type of offence`, sex `Total`, age `Total` and unit `Rate per 100,000 population`, for three named sexual-violence categories. Do not mix victim-relationship records, counts or sex-specific records. Assert a unique country/year/category record. Rates are provided by UNODC; this report does not recompute denominators. Rows absent from the source remain absent. E&W, Scotland and Northern Ireland remain separate codes.
+3. **ONS trend:** parse the downloaded chart CSV, retaining its 16–59 population. Reindex the years so unavailable values appear as gaps, including 2021. Do not interpolate. Do not attach the redesigned 2026 estimate.
+4. **Other ONS charts:** use downloaded age and childhood chart CSVs. Latest 2026 sex estimates, UNICEF regional figures and Home Office outcome-maturity values are small manually transcribed series from the linked releases, with their exact figures and definitions visible in `build_report.py`.
+5. **UK snapshots:** verify the Northern Ireland count against the downloaded PSNI workbook. The England and Wales and Scottish counts are transcribed from their official bulletins. They have different periods and are not aggregated.
+6. **Build:** verify hashes of retained source downloads before generating charts and tables. Render the complete Quarto site; validate local file links, data uniqueness, labels and chart existence. Raw-source hash validation freezes the edition; adopting revisions requires a reviewed source update.
+
+## Interpretation limits
+
+**Denominators:** people affected, offences, recorded investigations and service contacts are different units. Percentages of women, all adults and the entire population cannot be freely compared.
+
+**Age and time:** last-year, since-age-15 and before-age-18 measures answer different questions. Older adolescents overlap the adult-oriented and childhood sources. Retrospective adult reports can omit children currently experiencing abuse and people outside the household sample.
+
+**Survey uncertainty:** estimates are not exact counts. WHO intervals express model uncertainty. ONS subgroup charts here show point estimates; only source-supported significance statements are made. Disclosure, recall, sample coverage and non-response affect estimates. The absence of a worldwide male adult estimate in this report is an evidence gap, not an assumption that men are unaffected.
+
+**Territory:** a modelled United Kingdom estimate is not the same statistical geography as an England and Wales survey. Scottish and Northern Irish police series need their own legal and recording context.
+
+**Ranks and causes:** country ordering does not establish relative safety, policy effects or causes. No inference about individual perpetrators, migration, ethnicity or individual risk follows from these aggregate figures.
+
+## Coverage and access limitations
+
+The WHO and UNICEF PDF downloads were inaccessible in this environment. The report uses WHO's own portal JSON, definitions and publication page, and UNICEF's own accessible release. The WHO requested-country list includes seven supported codes without returned estimates; these are not filled. The international portal is accessed as a frozen snapshot, not as a promise of live data.
+
+An additional ONS police-trend CSV request was rate-limited. No chart is constructed from that failed request. The international police comparison instead uses the successfully downloaded UNODC workbook; UK recent counts use the accessible official bulletins. Failed source attempts are recorded in the register.
+
+## Downloads
+
+- [WHO country estimates and uncertainty](data/who-non-partner-sexual-violence.csv)
+- [WHO underlying studies](data/who-underlying-studies.csv)
+- [UNODC all extracted rates](data/unodc-recorded-rates.csv)
+- [UNODC plotted common-year selection](data/unodc-2022-comparison.csv)
+- [England and Wales historical survey](data/england-wales-survey-trend.csv)
+- [England and Wales age breakdown](data/england-wales-age-2025.csv)
+- [England and Wales redesigned 2026 survey](data/england-wales-sexual-victimisation-2026.csv)
+- [UNICEF regional childhood estimates](data/unicef-childhood-regions.csv)
+- [ONS retrospective childhood estimates](data/england-wales-childhood-2024.csv)
+- [Rape outcome maturity](data/rape-outcome-maturity.csv)
+- [UK jurisdiction snapshots](data/uk-jurisdiction-snapshots.csv)
+
+Charts are independent presentations of the cited statistical evidence. Attribute the original agencies when reusing data; consult their terms for third-party source material. This report does not imply agency endorsement.
+
+{{< include _links.qmd >}}

@@ -1,0 +1,106 @@
+Additional information | Violence against women data Logo Global Database on the Prevalence of Violence Against Women Introduction Arrow Introduction Map Data Measurement Additional Information Definitions Operational definitions of forms of intimate partner violence
+              (IPV) and indicators most frequently used in surveys included in
+              this analysis TERM DEFINITION Intimate partner a violence (IPV) (physical and/or
+                    sexual) A woman’s self-reported experience of one or more acts of
+                      physical or sexual violence, or both, by a current or
+                      former husband or male intimate partner since the age of
+                      15 years b . “Physical IPV” c is operationalized as acts that
+                      can physically hurt the victim, including, but not limited
+                      to: being slapped or having something thrown at you that
+                      could hurt you; being pushed or shoved; being hit with a
+                      fist or something else that could hurt; being kicked,
+                      dragged or beaten up; being choked or burnt on purpose;
+                      and/or being threatened with or actually having a gun,
+                      knife or other weapon used on you. “Sexual IPV” d is operationalized as: being
+                      physically forced to have sexual intercourse when you do
+                      not want to; having sexual intercourse out of fear for
+                      what your partner might do or through coercion; and/or
+                      being forced to do something sexual that you consider
+                      humiliating or degrading. Note: Only women who reported being married, cohabiting or
+                    having an intimate partner at some point in their lives
+                    (i.e. ever-married/partnered) were included in the measure
+                    of intimate partner violence as they are considered “at
+                    risk” for this form of violence. “Severe IPV” Severe physical violence is defined based on the severity of
+                    the acts – the following acts of physical IPV are defined as
+                    severe: being beaten up, choked or burnt on purpose, and/or
+                    being threatened or having a weapon used against you. Any
+                    sexual violence is considered severe. Lifetime prevalence e of IPV The proportion of ever-married/partnered women who reported
+                    that they had been subjected to one or more acts of physical
+                    or sexual violence, or both, by a current or former husband
+                    or male intimate partner in their lifetime (defined as since
+                    the age of 15 years). Past 12 months prevalence e of IPV (also referred
+                    to as recent or current IPV) The proportion of ever-married/partnered women who reported
+                    that they had been subjected to one or more acts of physical
+                    or sexual violence, or both, by a current or former husband
+                    or male intimate partner within the 12 months preceding the
+                    survey. a The definition of “intimate partner” varies between
+                settings and includes formal partnerships, such as marriage, as
+                well as informal partnerships, such as cohabitation or other
+                regular intimate partnerships. It is important that the
+                denominator is inclusive of all women who could be exposed to
+                intimate partner violence. For the purposes of this analysis we
+                accepted whatever definitions of “partner” were used in the
+                surveys/studies that were included in this analysis (see Section
+                3), which includes current and former husbands, and current and
+                former cohabiting and, in some instances, non-cohabiting male
+                intimate partners. b The age of 15 years was set as the lower age limit
+                for the purposes of these estimates. Most surveys, including the
+                Demographic and Health Surveys (DHS) and specialized surveys on
+                violence against women, include girls and women aged 15 and
+                older in the measure of IPV, to capture the experiences of girls
+                and women in settings where marriage commonly occurs among girls
+                from the age of 15 years. c The Domestic Violence Module of the DHS, the WHO
+                Multi-country study on Women’s Health and Domestic Violence
+                against Women, and other specialized surveys on violence against
+                women that use the WHO instrument, draw on adapted versions of
+                the Conflict Tactics Scale (52) to measure the prevalence of
+                physical partner violence. d As operationalized in the Domestic Violence Module of
+                the DHS, the WHO Multi-country Study on Women’s Health and
+                Domestic Violence against Women, and other specialized surveys
+                on violence against women that use the WHO instrument. e Prevalence refers to the number of women who have
+                been subjected to violence divided by the number of at-risk
+                women in the study population. Operational definitions of non-partner sexual violence (NPSV)
+                and indicators most frequently used in surveys included in this
+                analysis TERM DEFINITION Non-partner sexual violence (NPSV) A woman’s self-reported experience of one or more acts
+                        of sexual violence by someone other than a current or
+                        former husband or male intimate partner since the age of
+                        15 years a . “Sexual violence” refers to being forced, coerced or
+                        threatened to perform any unwanted sexual act; this
+                        could include rape, attempted rape, unwanted sexual
+                        touching or non-contact forms of sexual violence. Some surveys used “rape” or “attempted rape” as their
+                        only measure of NPSV. In order to avoid further
+                        underestimation of an already highly underreported form
+                        of violence, the statistical modelling adjusted for the
+                        use of this narrow definition (see Fig. 3.1 in Section
+                        3, and Annex 11 for further details). Note: Sexual harassment was not included in the
+                        definition of sexual violence. Note: For this form of violence, all women (ever- and
+                      never-married/partnered women) can be considered “at risk”
+                      and are hence included in the denominator for this
+                      measure. Lifetime prevalence b of NPSV The proportion of women who reported that they had been
+                      subjected to one or more acts of sexual violence by
+                      someone other than a current or former husband or male
+                      intimate partner in their lifetime (defined as since the
+                      age of 15 years) c . a The age of 15 years was set as the lower age limit
+                  for the purposes of these estimates (as for intimate partner
+                  violence). Adolescent girls in the age group 15–17 years who
+                  have been subjected to NPSV are also considered to have been
+                  subjected to child sexual abuse. b Prevalence refers to the number of women who have
+                  been subjected to sexual violence divided by the number of
+                  at-risk women (all women, in the case of NPSV) in the study
+                  population. c As presented in section 4.2.1 (Global prevalence of
+                  non-partner sexual violence), NPSV from the Demographic and
+                  Health Survey (DHS) only captures (i) the experience if the
+                  perpetrator of the first act of sexual violence was a
+                  non-partner; (ii) sexual violence resulting from use of
+                  physical force only (which does not capture sexual violence
+                  involving the use of intimidation, threats or coercion); and
+                  (iii) women whose first sexual violence experience was since
+                  age 15 and hence filters out those who may have first
+                  experienced it before age 15 and also subsequently. Methodology For details of the methodology please see the full report here. WHO produced these estimates on behalf of the United Nations
+              Inter-Agency Working Group on Violence Against Women Estimation
+              and Data (VAW-IAWGED). The Working Group was established in 2017
+              and comprises representatives from WHO, the United Nations Entity
+              for Gender Equality and the Empowerment of Women (UN Women), the
+              United Nations Children’s Fund (UNICEF), the United Nations
+              Population Fund (UNFPA), the United Nations Office on Drugs and
+              Crime (UNODC) and the United Nations Statistics Division (UNSD). Related Links WHO Sexual and Reproductive Health and Research Follow for updates Follow us on Twitter If you would like to receive updates about the project, please subscribe for our newsletter. Email Subscribe WHO © 2026 . World Health Organization Privacy legal notice Contact us Feedback

@@ -1,0 +1,76 @@
+---
+title: "Sexual violence in perspective"
+subtitle: "Worldwide evidence, a detailed UK view, and the differences behind the rates."
+author: Kathryn Hopkins
+date: 2026-11-06
+date-format: "D MMMM YYYY"
+toc: false
+---
+
+::: {.eyebrow}
+Evidence edition · 6 November 2026
+:::
+
+::: {.lead}
+Sexual violence is measured through people's reported experiences, police records and the response of public services. Each reveals part of the picture. Comparing countries starts with identifying which part each number describes.
+:::
+
+::: {.metric-grid}
+::: {.metric}
+**138**
+countries and areas with downloadable WHO estimates in this snapshot
+
+Women aged 15+ · non-partner sexual violence since age 15
+:::
+::: {.metric}
+**2.1%**
+of people aged 16+ experienced sexual victimisation in the last year
+
+England and Wales · redesigned CSEW measure · YE March 2026
+:::
+::: {.metric}
+**9.1%**
+of adults recalled sexual abuse before age 18
+
+England and Wales · retrospective CSEW measure · YE March 2024
+:::
+:::
+
+Sources: [WHO data portal][who-data], [ONS latest crime bulletin][ons-2026], [ONS childhood bulletin][ons-child]. These are different populations and periods, not three comparable rates.
+
+## What the evidence shows
+
+**The international comparison is narrower than “all sexual assault”.** WHO's harmonised non-partner measure estimates UK lifetime prevalence at **7.3%**, with a **95% uncertainty interval of 4.6%–11.0%**, among women aged 15 and over. It excludes violence by a current or former intimate partner. The portal labels the territory United Kingdom; this should not be confused with the England and Wales crime survey. [Explore the worldwide comparison](worldwide.qmd).
+
+**The latest England and Wales adult survey starts a new series.** The redesigned sexual-victimisation questions produce an estimate of around **one million people** affected in the last year. The measure includes experiences beyond contact assault and cannot be joined to the former sexual-assault trend. [Read the UK detail](uk.qmd).
+
+**Childhood experiences need their own account.** UNICEF's estimates concern experiences before age 18 among people alive at estimation. ONS asks adults to recall their childhood. Neither is an annual estimate of abuse among today's children. [Read the childhood chapter](children.qmd).
+
+**Recorded offences and justice outcomes reveal institutional demand and response.** They cannot establish how common sexual violence is in the whole population. A charge is not a conviction, and an early charge rate changes as investigations conclude. [Read the justice chapter](justice.qmd).
+
+::: {.reading-note}
+**How to read “UK”.** England and Wales, Scotland and Northern Ireland have separate statistical systems and legal contexts. This report names the jurisdiction on every UK figure. It does not relabel England and Wales as the whole United Kingdom.
+:::
+
+## Start with the question
+
+| Your question | Evidence to use | What it cannot establish |
+|---|---|---|
+| How many people report an experience? | Population surveys; harmonised WHO estimates | Every unreported or undisclosed experience |
+| What has reached the police? | Recorded offences and their source definitions | A ranking of countries by actual victimisation |
+| What happened to recorded investigations? | Home Office outcome cohorts | The probability that every assault leads to conviction |
+| What happened during childhood? | Retrospective surveys; UNICEF estimates | Current annual child prevalence |
+
+::: {.chapter-links}
+[Worldwide: country estimates and recorded rates](worldwide.qmd)
+
+[UK: trends, sex, age and jurisdictions](uk.qmd)
+
+[Childhood: international and UK evidence](children.qmd)
+
+[Methods: definitions, downloads and limitations](methods.qmd)
+:::
+
+This report discusses sexual violence without graphic descriptions. [NHS information on help after sexual assault](https://www.nhs.uk/live-well/sexual-health/help-after-rape-and-sexual-assault/) is available for readers who want support information.
+
+{{< include _links.qmd >}}

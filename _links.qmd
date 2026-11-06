@@ -1,0 +1,14 @@
+[who]: https://www.who.int/publications/i/item/9789240116962
+[who-data]: https://vaw-data.srhr.org/data
+[who-definitions]: https://vaw-data.srhr.org/additional-information
+[who-news]: https://www.who.int/news/item/19-11-2025-lifetime-toll--840-million-women-faced-partner-or-sexual-violence
+[unodc]: https://data.unodc.org/datareport/violent-offences
+[ons-2026]: https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingjune2026
+[ons-trends]: https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/sexualoffencesprevalenceandtrendsenglandandwales/yearendingmarch2025
+[ons-victims]: https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/sexualoffencesvictimcharacteristicsenglandandwales/yearendingmarch2025
+[ons-child]: https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/abuseduringchildhoodinenglandandwales/march2024
+[home-office]: https://www.gov.uk/government/statistics/crime-outcomes-in-england-and-wales-2025-to-2026/crime-outcomes-in-england-and-wales-2025-to-2026
+[dfe]: https://explore-education-statistics.service.gov.uk/find-statistics/children-in-need-a-focus-on-sexual-abuse-and-exploitation/2025
+[scotland]: https://www.gov.scot/publications/recorded-crime-scotland-2025-26/pages/sexual-crimes/
+[psni]: https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/police-recorded-crime-statistics
+[unicef]: https://www.unicef.org/press-releases/over-370-million-girls-and-women-globally-subjected-rape-or-sexual-assault-children
