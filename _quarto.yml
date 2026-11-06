@@ -10,6 +10,7 @@ project:
     - methods.qmd
     - medium/article.qmd
   resources:
+    - "!docs/**"
     - data/**
     - assets/**
     - medium/images/**
