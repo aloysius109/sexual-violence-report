@@ -18,8 +18,8 @@ website:
   title: "Sexual violence in perspective"
   description: "Worldwide evidence and a detailed UK view, with adults and childhood experiences presented separately."
   navbar:
-    background: "#263e4c"
-    foreground: "#ffffff"
+    background: "#dfe9e2"
+    foreground: "#263e4c"
     left:
       - href: index.qmd
         text: Overview

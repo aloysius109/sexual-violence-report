@@ -1,0 +1,214 @@
+{
+  "retrieved_date": "2026-11-06",
+  "sources": [
+    {
+      "id": "who-publication",
+      "url": "https://www.who.int/publications/i/item/9789240116962",
+      "file": "sources\\who-publication.html",
+      "sha256": "d6d96e3a86409156795cb91da3a6451d33e7c401507198d21e72da554d116941",
+      "bytes": 86001
+    },
+    {
+      "id": "who-data",
+      "url": "https://vaw-data.srhr.org/data",
+      "file": "sources\\who-data.html",
+      "sha256": "23b8ec68a4ccf1a972ff0ae65c0ccb7bda0e6b6d29bd724289cf373e425fc7aa",
+      "bytes": 87200
+    },
+    {
+      "id": "who-report",
+      "url": "https://iris.who.int/server/api/core/bitstreams/efce85f1-9d35-43f9-adf8-d9c7d6575441/content",
+      "error": "403 Client Error: Forbidden for url: https://iris.who.int/server/api/core/bitstreams/efce85f1-9d35-43f9-adf8-d9c7d6575441/content"
+    },
+    {
+      "id": "ons-trends-2025",
+      "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/sexualoffencesprevalenceandtrendsenglandandwales/yearendingmarch2025",
+      "file": "sources\\ons-trends-2025.html",
+      "sha256": "da9e5223d4f8572831299687fe3d00a3b0e8482a601570336d6f86989e2e4040",
+      "bytes": 85561
+    },
+    {
+      "id": "ons-victims-2025",
+      "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/sexualoffencesvictimcharacteristicsenglandandwales/yearendingmarch2025",
+      "file": "sources\\ons-victims-2025.html",
+      "sha256": "ed205bf0046eca92511141968ddcb6d7dae0c9e66974458eedac90bb7cd5ef62",
+      "bytes": 93930
+    },
+    {
+      "id": "ons-latest-2026",
+      "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingjune2026",
+      "file": "sources\\ons-latest-2026.html",
+      "sha256": "eda5734de21c32e2a6126c42682ec824dffb26548723217bc708032f195c7cf5",
+      "bytes": 135528
+    },
+    {
+      "id": "ons-childhood-2019",
+      "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/childsexualabuseinenglandandwales/yearendingmarch2019",
+      "file": "sources\\ons-childhood-2019.html",
+      "sha256": "8c107958c7c039b95bd2e6b5ca62e9b9e7d63576d13d81d75c1fc59d695d3e78",
+      "bytes": 129706
+    },
+    {
+      "id": "home-office-outcomes-2026",
+      "url": "https://www.gov.uk/government/statistics/crime-outcomes-in-england-and-wales-2025-to-2026/crime-outcomes-in-england-and-wales-2025-to-2026",
+      "file": "sources\\home-office-outcomes-2026.html",
+      "sha256": "ce0a4d2993516b37f3db06e6f970368f8862804a4ffb3ba8d8fc1995021797a8",
+      "bytes": 321968
+    },
+    {
+      "id": "dfe-children-2025",
+      "url": "https://explore-education-statistics.service.gov.uk/find-statistics/children-in-need-a-focus-on-sexual-abuse-and-exploitation/2025",
+      "file": "sources\\dfe-children-2025.html",
+      "sha256": "c32f73c0a78f6f6d63500479107d69f37691295915f9e99a07b7e602b0aa4393",
+      "bytes": 478636
+    },
+    {
+      "id": "scotland-2026",
+      "url": "https://www.gov.scot/publications/recorded-crime-scotland-2025-26/pages/sexual-crimes/",
+      "file": "sources\\scotland-2026.html",
+      "sha256": "906f84fd43a4fec68266d547da3b23be6b6fbb082fcc637a4211c7ffa29cd19b",
+      "bytes": 50806
+    },
+    {
+      "id": "psni-index",
+      "url": "https://www.psni.police.uk/about-us/our-publications-and-reports/official-statistics/police-recorded-crime-statistics",
+      "file": "sources\\psni-index.html",
+      "sha256": "ccf3ced9488019e0de2643f8e3cf7f8eb3e9d9d399154f36b196b0b8ee6ff696",
+      "bytes": 266425
+    },
+    {
+      "id": "unicef-data",
+      "url": "https://data.unicef.org/topic/child-protection/violence/sexual-violence/",
+      "error": "403 Client Error: Forbidden for url: https://data.unicef.org/topic/child-protection/violence/sexual-violence/"
+    },
+    {
+      "id": "unicef-report",
+      "url": "https://data.unicef.org/wp-content/uploads/2024/10/UNICEF_When-Numbers-Demand-Action_Oct-2024.pdf",
+      "error": "403 Client Error: Forbidden for url: https://data.unicef.org/wp-content/uploads/2024/10/UNICEF_When-Numbers-Demand-Action_Oct-2024.pdf"
+    },
+    {
+      "id": "unodc-portal",
+      "url": "https://dataunodc.un.org/dp-crime-sexual-violence",
+      "file": "sources\\unodc-portal.html",
+      "sha256": "3dc4d50c6e9021a3901e9391ad8f2e7b5d5a7e86f708f63612009775938614c2",
+      "bytes": 44386
+    },
+    {
+      "id": "who-locations",
+      "url": "https://vaw-data.srhr.org/api/chart1/filters/locations?violence_type=npsv",
+      "file": "sources\\who-locations.json",
+      "sha256": "2fe7a828860c875ae28a1aee6762eac3781586aff2b9fe13e31bd3b5ffcb80ef",
+      "bytes": 17437
+    },
+    {
+      "id": "who-npsv-countries",
+      "url": "https://vaw-data.srhr.org/api/chart1?violence_type=npsv&age_group=15_99&violence_time=lifetime&countries=ALB&countries=AGO&countries=ARM&countries=AUS&countries=AUT&countries=AZE&countries=BHS&countries=BGD&countries=BLR&countries=BEL&countries=BLZ&countries=BEN&countries=BTN&countries=BOL&countries=BIH&countries=BWA&countries=BRA&countries=BGR&countries=BFA&countries=BDI&countries=KHM&countries=CMR&countries=CAN&countries=TCD&countries=CHL&countries=CHN&countries=COL&countries=COM&countries=COD&countries=COK&countries=CRI&countries=CIV&countries=HRV&countries=CYP&countries=CZE&countries=DNK&countries=DOM&countries=ECU&countries=EGY&countries=SLV&countries=EST&countries=SWZ&countries=ETH&countries=FJI&countries=FIN&countries=FRA&countries=GAB&countries=GMB&countries=GEO&countries=DEU&countries=GHA&countries=GRC&countries=GRD&countries=GTM&countries=GUY&countries=HTI&countries=HND&countries=HUN&countries=IND&countries=IDN&countries=IRL&countries=ITA&countries=JAM&countries=JPN&countries=KAZ&countries=KEN&countries=KIR&countries=RKS&countries=KGZ&countries=LAO&countries=LVA&countries=LSO&countries=LBR&countries=LTU&countries=LUX&countries=MDG&countries=MWI&countries=MDV&countries=MLI&countries=MLT&countries=MHL&countries=MRT&countries=MEX&countries=FSM&countries=MDA&countries=MNG&countries=MNE&countries=MAR&countries=MOZ&countries=MMR&countries=NAM&countries=NRU&countries=NPL&countries=NLD&countries=NZL&countries=NER&countries=NGA&countries=MKD&countries=PSE&countries=PAK&countries=PLW&countries=PAN&countries=PNG&countries=PRY&countries=PER&countries=PHL&countries=POL&countries=PRT&countries=ROU&countries=RWA&countries=WSM&countries=STP&countries=SEN&countries=SRB&countries=SLE&countries=SGP&countries=SVK&countries=SVN&countries=SLB&countries=ZAF&countries=SSD&countries=ESP&countries=LKA&countries=SUR&countries=SWE&countries=CHE&countries=TJK&countries=TZA&countries=THA&countries=TLS&countries=TGO&countries=TON&countries=TTO&countries=TUN&countries=TUR&countries=TKM&countries=TUV&countries=UGA&countries=UKR&countries=GBR&countries=USA&countries=VUT&countries=VNM&countries=ZMB&countries=ZWE",
+      "file": "sources\\who-npsv-countries.json",
+      "sha256": "68bdeec0bcd40d97fad56eb4e1f523eb239f1b2b91add12e07b524c5e00bbd24",
+      "bytes": 296358
+    },
+    {
+      "id": "ons-types-2025",
+      "url": "https://www.ons.gov.uk/generator?format=csv&uri=%2Fpeoplepopulationandcommunity%2Fcrimeandjustice%2Farticles%2Fsexualoffencesprevalenceandtrendsenglandandwales%2Fyearendingmarch2025%2F9ca73939",
+      "file": "sources\\ons-types-2025.csv",
+      "sha256": "f5da87cbbbd5c431016ec2707996651ba4a9621e3bfe946ca45485f3af22830c",
+      "bytes": 927
+    },
+    {
+      "id": "ons-trend-2025",
+      "url": "https://www.ons.gov.uk/generator?format=csv&uri=%2Fpeoplepopulationandcommunity%2Fcrimeandjustice%2Farticles%2Fsexualoffencesprevalenceandtrendsenglandandwales%2Fyearendingmarch2025%2F577e62ec",
+      "file": "sources\\ons-trend-2025.csv",
+      "sha256": "f42236d9ca2f41ca44f0516be3df74b75fe22d2ef17d432b8b0148fdc97bae7a",
+      "bytes": 2070
+    },
+    {
+      "id": "psni-march-2026",
+      "url": "https://www.psni.police.uk/system/files/2026-05/192014209/Police%20Recorded%20Crime%20Tables%20Period%20Ending%2031st%20March%202026.xlsx",
+      "file": "sources\\psni-march-2026.xlsx",
+      "sha256": "2e21345196964d802336a27507011ae695795c97a7d4e14241f71a98f5bf440d",
+      "bytes": 1153092
+    },
+    {
+      "id": "ons-childhood-2024",
+      "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/abuseduringchildhoodinenglandandwales/march2024",
+      "file": "sources\\ons-childhood-2024.html",
+      "sha256": "c496210c3b6b7db73b24ea17c1978bea9ca6622e7df13f3b5e785020a280dd6b",
+      "bytes": 118081
+    },
+    {
+      "id": "who-definitions",
+      "url": "https://vaw-data.srhr.org/additional-information",
+      "file": "sources\\who-definitions.html",
+      "sha256": "dd19954246ece43c00b3aa5a47720cc166ae89022c63297f1ff328fde6fc9999",
+      "bytes": 114029
+    },
+    {
+      "id": "who-home",
+      "url": "https://vaw-data.srhr.org/homepage",
+      "file": "sources\\who-home.html",
+      "sha256": "ed7f36b21c345b443cfbc52f5c6766226b685a7667c96019c975699ac545e8e6",
+      "bytes": 95086
+    },
+    {
+      "id": "unicef-release",
+      "url": "https://www.unicef.org/press-releases/over-370-million-girls-and-women-globally-subjected-rape-or-sexual-assault-children",
+      "file": "sources\\unicef-release.html",
+      "sha256": "1c20b0bdf91018e95d9f55e3af675c147deda99cc99c866df6ad375a5b6c0a2c",
+      "bytes": 222061
+    },
+    {
+      "id": "unodc-current",
+      "url": "https://data.unodc.org/datareport/violent-offences",
+      "file": "sources\\unodc-current.html",
+      "sha256": "ff94b82a309a54fb91917fc723591a6ea606d70fee12c602bd7790b03c676aca",
+      "bytes": 47694
+    },
+    {
+      "id": "ons-childhood-2024-figure-1",
+      "url": "https://www.ons.gov.uk/generator?uri=/peoplepopulationandcommunity/crimeandjustice/bulletins/abuseduringchildhoodinenglandandwales/march2024/582b412e&format=csv",
+      "file": "sources\\ons-childhood-2024-figure-1.csv",
+      "sha256": "5a2efa29fbe7fb118040c75effa5febffaf87ee51e723910e47d141d1d6ec586",
+      "bytes": 1292
+    },
+    {
+      "id": "ons-childhood-2024-figure-6",
+      "url": "https://www.ons.gov.uk/generator?uri=/peoplepopulationandcommunity/crimeandjustice/bulletins/abuseduringchildhoodinenglandandwales/march2024/c3edd9cc&format=csv",
+      "file": "sources\\ons-childhood-2024-figure-6.csv",
+      "sha256": "7141e3fa50945cc3d03851f4edee72d0b90139c34df56a7c178c92c92e65b1fc",
+      "bytes": 714
+    },
+    {
+      "id": "ons-victims-2025-figure-1",
+      "url": "https://www.ons.gov.uk/generator?uri=/peoplepopulationandcommunity/crimeandjustice/articles/sexualoffencesvictimcharacteristicsenglandandwales/yearendingmarch2025/fa1de455&format=csv",
+      "file": "sources\\ons-victims-2025-figure-1.csv",
+      "sha256": "769741a202a823ce115f551ba4092ce5ce482b510516e74dcaa6f16ad8fc68c9",
+      "bytes": 800
+    },
+    {
+      "id": "ons-victims-2025-figure-3",
+      "url": "https://www.ons.gov.uk/generator?uri=/peoplepopulationandcommunity/crimeandjustice/articles/sexualoffencesvictimcharacteristicsenglandandwales/yearendingmarch2025/5887d0dc&format=csv",
+      "file": "sources\\ons-victims-2025-figure-3.csv",
+      "sha256": "3348a28e31cfd5ba5ab549296196c636b41404595244e2df9df17047cbac38ed",
+      "bytes": 825
+    },
+    {
+      "id": "ons-victims-2025-figure-5",
+      "url": "https://www.ons.gov.uk/generator?uri=/peoplepopulationandcommunity/crimeandjustice/articles/sexualoffencesvictimcharacteristicsenglandandwales/yearendingmarch2025/f4ff6df5&format=csv",
+      "file": "sources\\ons-victims-2025-figure-5.csv",
+      "sha256": "74f509a0f3509d5008c74c202340f7661af3f48e5a55859ad000448424504818",
+      "bytes": 853
+    },
+    {
+      "id": "unodc-workbook",
+      "url": "https://data.unodc.org/sites/dataportal.unodc.org/files/2026-07/data_cts_violent_and_sexual_crime.xlsx",
+      "file": "sources\\unodc-violent-sexual-2026.xlsx",
+      "sha256": "aae88312c7ad95b546315f89596c83edd37e8405eb8399cb39142e13dff4cba5",
+      "bytes": 1978909
+    },
+    {
+      "id": "ons-police-trend-failed",
+      "url": "https://www.ons.gov.uk/generator?uri=/peoplepopulationandcommunity/crimeandjustice/articles/sexualoffencesprevalenceandtrendsenglandandwales/yearendingmarch2025/0523e784&format=csv",
+      "error": "HTTP 429 Too Many Requests; not used in the report"
+    }
+  ]
+}
