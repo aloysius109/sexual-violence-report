@@ -43,8 +43,8 @@ website:
         text: Methods & sources
   search: true
   page-footer:
-    left: "Independent analysis by Kathryn Hopkins · Evidence checked 6 November 2026"
-    right: "Source-specific definitions and periods apply"
+    left: "[Kathryn Hopkins](https://aloysius109.github.io/) · Data vintages vary; checked 6 November 2026"
+    right: "Sources: WHO, UNICEF, UNODC & ONS · Reuse terms vary; see Methods"
 format:
   html:
     theme: cosmo

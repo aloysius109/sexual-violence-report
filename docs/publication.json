@@ -1,13 +1,16 @@
 {
   "review_edition": "2026-11-06",
+  "staged_at_utc": "2026-11-14T14:44:06.607863+00:00",
   "files": {
-    "children.html": "720ed3ae0e092edeb5aab0948beb52324f56a27db0ea50c5a0e08e9f5866279b",
-    "index.html": "4c94557d9190c86620e65f83e22735e20793cda99efef1d479b8d1869489c862",
-    "justice.html": "5f51abcc26fb8e496b74dd5b97274cda53b1c2808b54382e04a7871f722f78e1",
-    "methods.html": "c2c9feb9e4a9ab33ba33d41562db043a68a0ee2c39fb55be2d9971889ac139ea",
+    "children.html": "f3cf288e1bc55d99a607d159f92ad0641bb67539bc0f2407217372cbc2309eec",
+    "index.html": "211a1c8f18891667fbf2825c6a05adc439acd7705057ab775e39f9fc8eccb335",
+    "justice.html": "1b99daf81e9083cf00b88a722732ec7ecac6f04c6aaa084f7b96c8c030b3e4a4",
+    "methods.html": "aae6caf460cbaf88413360343c411508e2396c39dfb6a549dcdfedcf198331bd",
+    "robots.txt": "e7134b6b8397c71f09bf948bb85ef7e41b86e2123f595722f6b027fdc935ac03",
     "search.json": "e27fd23d07e419a49df76fc2d9211c267e30205300a0571fa3ae8727d31f8c5d",
-    "uk.html": "4aaf711b2b05ebecf965a157e94bb50cc381e9d7499d38ddc5a6233c7e40c585",
-    "worldwide.html": "5e91f916908876613da30d4313053c34eafcb4295a5d14841912b2ef16f85d32",
+    "sitemap.xml": "5a8d5d45343efce6d4fe0ae922ca68867040c5ca1fbd3fe585c9741841fc97e2",
+    "uk.html": "4828dfd678540e34f741f411f9585dd770d0c438397eef4a65209c67cc11d736",
+    "worldwide.html": "32e9ca289bac8919c859395480ebbced61339a1ea69d38d6322fbfd96fd68861",
     "assets/01-who-comparison.png": "d3f0c1aae9b23cd5e09348c2ed0cb5efd018f97adbdfd8901f05b79b9013cdee",
     "assets/02-recorded-comparison.png": "c0242286a691d188c89bd3da0b9f142db7419110735623ac1abba751e237e8fb",
     "assets/03-england-wales-trend.png": "a4115e80fe26efb5fdba75ec56cb4469aacb6791a35a10776f6470f643fa26aa",
@@ -33,7 +36,7 @@
     "data/who-coverage.csv": "ae065ca53d6eb7dfe477a5b1a3a109eecc21da036fc34c125788e2afa62a2227",
     "data/who-non-partner-sexual-violence.csv": "16537460072f5fd9bf044b5222d8546e1aa3fd38d4d6d0658108f398ba5630f4",
     "data/who-underlying-studies.csv": "e254f8ade020b7b49e014f609bbe9c31bd966742f4cf00ffb71d14fbe696a5ab",
-    "medium/article.html": "d0174e8d79b4d9eaf02f33cf3ee69464c7e3d9699b06e43de337b5391dc7a527",
+    "medium/article.html": "59a7ea6e12fa049c271fe2e3184ecbacba513565a619c6dbcc6f14ce5477017e",
     "medium/PUBLISHING.txt": "64e4c42c3ee186c32df4c20414b77bf2a877f921c13489bb43446e45beecf56a",
     "medium/images/01-who-comparison.png": "d3f0c1aae9b23cd5e09348c2ed0cb5efd018f97adbdfd8901f05b79b9013cdee",
     "medium/images/03-england-wales-trend.png": "a4115e80fe26efb5fdba75ec56cb4469aacb6791a35a10776f6470f643fa26aa",
@@ -58,7 +61,6 @@
     "site_libs/quarto-search/fuse.min.js": "c57339c3fa16b1d69d9a6b46749a8139ef8d4fc9bbfe48144ff897aa7d4222ec",
     "site_libs/quarto-search/quarto-search.js": "1a23221f499b3993dc66ca5c8913e4e6602dfa4652337e9fbf75139ded5ece68",
     "site_libs/quarto-html/scrollable-regions/scrollable-regions.js": "b2f956903f5b9c36742454e74d37571f96eceedad7b0b603abc9fac713cf992e",
-    "site_libs/quarto-html/tabsets/tabsets.js": "a9c226bf70e82eaf5476f619cecfb70b4446b87ce4d1634d6404b0b2ba006d15",
-    "medium-edition.zip": "b6df526dc8764e82b0601015629ca8f9f1b7e802a7ba62da439cbf8abf5ce3ae"
+    "site_libs/quarto-html/tabsets/tabsets.js": "a9c226bf70e82eaf5476f619cecfb70b4446b87ce4d1634d6404b0b2ba006d15"
   }
 }

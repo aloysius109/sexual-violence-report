@@ -16,6 +16,6 @@ python validate_report.py
 
 The published report is https://aloysius109.github.io/sexual-violence-report/ .
 
-The rendered report is `_site/index.html`. The Medium handoff is `medium/article.html`, with six PNGs in `medium/images/` and instructions in `medium/PUBLISHING.txt`. Build with `python build_report.py --published-url https://aloysius109.github.io/sexual-violence-report/` to retain the public full-report link.
+The rendered report is `_site/index.html`. The Medium handoff is `_site/medium/article.html`, with six PNGs in `medium/images/` and instructions in `medium/PUBLISHING.txt`. Build with `python build_report.py --published-url https://aloysius109.github.io/sexual-violence-report/` to retain the public full-report link.
 
-The reviewed `_site/` snapshot is copied to `docs/`, with file hashes in `docs/publication.json`. Run `python check_publication.py` before publication. The manual **Publish sexual violence report** workflow validates and deploys this report alone.
+The reviewed `_site/` snapshot is copied to `docs/` with `python stage_publication.py`; file hashes are recorded in `docs/publication.json`. Run `python stage_publication.py --check` or `python check_publication.py` before publication. The manual **Publish sexual violence report** workflow validates and deploys this report alone.
