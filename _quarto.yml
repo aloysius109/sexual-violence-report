@@ -18,6 +18,13 @@ project:
 website:
   title: "Sexual violence in perspective"
   description: "Worldwide evidence and a detailed UK view, with adults and childhood experiences presented separately."
+  site-url: "https://aloysius109.github.io/sexual-violence-report/"
+  image: "https://aloysius109.github.io/assets/og/sexual-violence.png"
+  open-graph:
+    image-width: 1200
+    image-height: 630
+  twitter-card:
+    card-style: summary_large_image
   navbar:
     background: "#dfe9e2"
     foreground: "#263e4c"
@@ -42,6 +49,8 @@ format:
   html:
     theme: cosmo
     css: assets/report.css
+    include-in-header: head-social.html
+    canonical-url: true
     toc: true
     toc-depth: 2
     lang: en-GB

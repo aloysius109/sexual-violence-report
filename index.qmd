@@ -1,6 +1,7 @@
 ---
 title: "Sexual violence in perspective"
 subtitle: "Worldwide evidence, a detailed UK view, and the differences behind the rates."
+image-alt: "Sexual violence in perspective — worldwide evidence and a detailed UK view, with careful distinctions across measures."
 author: Kathryn Hopkins
 date: 2026-11-06
 date-format: "D MMMM YYYY"
