@@ -80,11 +80,15 @@ def inspect(source, last_call):
                                f"archived: {source.get('error', 'no copy was saved')}")}
         return {**result, "state": "unchanged",
                 "detail": f"Still unavailable (HTTP {status}), as recorded when the edition was archived."}
+    if kind == "page":
+        # Any 2xx counts as reachable: some sites answer an automated request with 202 rather than 200.
+        if 200 <= status < 300:
+            return {**result, "state": "unchanged", "detail": f"Reachable (HTTP {status}, {len(body):,} bytes)."}
+        return {**result, "state": "unreachable",
+                "detail": f"HTTP {status}: the archived page is no longer served at this address."}
     if status != 200:
         return {**result, "state": "unreachable",
                 "detail": f"HTTP {status}: the archived source is no longer served at this address."}
-    if kind == "page":
-        return {**result, "state": "unchanged", "detail": f"Reachable (HTTP 200, {len(body):,} bytes)."}
     found = hashlib.sha256(body).hexdigest()
     if found == source.get("sha256"):
         return {**result, "state": "unchanged", "detail": f"{len(body):,} bytes, sha256 unchanged."}
