@@ -20,6 +20,14 @@ The rendered report is `_site/index.html`. The Medium handoff is `_site/medium/a
 
 The reviewed `_site/` snapshot is copied to `docs/` with `python stage_publication.py`; file hashes are recorded in `docs/publication.json`. Run `python check_report.py` to check source hashes, report figures and data downloads. Run `python stage_publication.py --check` or `python check_publication.py` to validate the staged publication. The **Report checks** workflow runs the read-only report and publication checks on pushes and pull requests; the manual **Publish sexual violence report** workflow validates and deploys this report alone.
 
+## Source watch
+
+`python check_sources.py` re-checks every address in `sources/manifest.json` against what it serves today. Data files (CSV, JSON, spreadsheets) are compared by SHA-256, because a changed byte there is a changed figure. Web pages are checked for availability only: their markup churns for reasons unrelated to the statistics, so hashing them would raise a weekly false alarm. Requests are paced per host, because the ONS CSV generator rate-limits rapid requests. The sources that failed when this edition was archived are re-checked too, so a download that becomes available again is reported rather than forgotten. The script reads upstream only; it never writes data into the repository and never republishes.
+
+The **Source watch** workflow runs the same check every Monday and opens an issue labelled `source-watch` when a data file changes, an archived source disappears, or a previously failed download starts working. Each distinct state is reported once: closing the issue dismisses that state, and a new state is added as a comment on the open issue. GitHub disables scheduled workflows after 60 days without repository activity; if this report sits untouched for two months, dispatch the workflow manually to re-enable it.
+
+Adopting a change is a deliberate edit, not an automatic one: the prose figures are pinned by `check_report.py`, and `docs/` is hash-locked, so a refresh means re-running `build_report.py`, re-rendering, re-validating, restaging and republishing.
+
 ## Analytics
 
 The report uses GoatCounter, configured in `analytics.html`. Update the `data-goatcounter` URL in that partial if the account changes. It is used without cookies, a consent banner or personal-data collection.
