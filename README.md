@@ -26,7 +26,7 @@ The reviewed `_site/` snapshot is copied to `docs/` with `python stage_publicati
 
 The **Source watch** workflow runs the same check every Monday and opens an issue labelled `source-watch` when a data file changes, an archived source disappears, or a previously failed download starts working. Each distinct state is reported once: closing the issue dismisses that state, and a new state is added as a comment on the open issue. GitHub disables scheduled workflows after 60 days without repository activity; if this report sits untouched for two months, dispatch the workflow manually to re-enable it.
 
-Adopting a change is a deliberate edit, not an automatic one: the prose figures are pinned by `check_report.py`, and `docs/` is hash-locked, so a refresh means re-running `build_report.py`, re-rendering, re-validating, restaging and republishing.
+Adopting a change is a deliberate edit, not an automatic one: the prose figures are pinned by `check_report.py`, and `docs/` is hash-locked, so a refresh means re-running `build_report.py`, re-rendering, re-validating, restaging and republishing. The current archive status, including sources that remain blocked or are only intermittently reachable, is documented in `methods.qmd` under “Coverage and access limitations.”
 
 ## Analytics
 
