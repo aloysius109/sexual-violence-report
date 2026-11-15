@@ -76,3 +76,7 @@ Sources: [WHO data portal][who-data], [ONS latest crime bulletin][ons-2026], [ON
 This report discusses sexual violence without graphic descriptions. [NHS information on help after sexual assault](https://www.nhs.uk/live-well/sexual-health/help-after-rape-and-sexual-assault/) is available for readers who want support information.
 
 {{< include _links.qmd >}}
+
+## Related reports
+
+- [Asylum under pressure](https://aloysius109.github.io/asylum-tracker/asylum/) — both reports examine sensitive human-rights evidence with careful distinctions between measures.

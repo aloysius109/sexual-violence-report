@@ -50,6 +50,7 @@ format:
     theme: cosmo
     css: assets/report.css
     include-in-header: head-social.html
+    include-after-body: analytics.html
     canonical-url: true
     toc: true
     toc-depth: 2
