@@ -1,11 +1,10 @@
-"""Validate the rendered review edition and package the standalone Medium handoff."""
+"""Validate the rendered review edition and standalone Medium handoff."""
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 import hashlib
 import json
 import shutil
-import zipfile
 import pandas as pd
 from bs4 import BeautifulSoup
 
@@ -67,14 +66,11 @@ def validate():
     if not json.loads((ROOT/"data/edition.json").read_text())["published_url"]:
         s=s.replace('href="../index.html"','href="../_site/index.html"')
         p.write_text(s,encoding="utf-8")
-    with zipfile.ZipFile(ROOT/"medium-edition.zip","w",zipfile.ZIP_DEFLATED) as archive:
-        for f in (ROOT/"medium").rglob("*"):
-            if f.is_file():archive.write(f,f.relative_to(ROOT/"medium"))
     manifest={"review_edition":"2026-11-06","files":{
         p.relative_to(site).as_posix():hashlib.sha256(p.read_bytes()).hexdigest()
         for p in site.rglob("*") if p.is_file()}}
     (ROOT/"review-manifest.json").write_text(json.dumps(manifest,indent=2),encoding="utf-8")
-    print(f"PASS: {len(required)} pages; all relative file links; {images} chart references with alt text; 138 WHO countries; missing-year gap; unique UNODC records; standalone Medium HTML and ZIP.")
+    print(f"PASS: {len(required)} pages; all relative file links; {images} chart references with alt text; 138 WHO countries; missing-year gap; unique UNODC records; standalone Medium HTML.")
 
 
 if __name__=="__main__":validate()
