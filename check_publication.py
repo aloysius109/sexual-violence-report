@@ -56,7 +56,15 @@ for name, expected in manifest['files'].items():
     path = safe_path(SITE, name)
     if path.is_symlink() or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
         raise ValueError(f'Reviewed publication file changed: {name}')
-for name in ['index.html', 'worldwide.html', 'uk.html', 'children.html', 'justice.html', 'methods.html']:
+for name in (
+    'index.html',
+    'worldwide.html',
+    'uk.html',
+    'children.html',
+    'justice.html',
+    'methods.html',
+    'summary/index.html',
+):
     if not (SITE / name).is_file():
         raise ValueError(f'Missing page: {name}')
 check_links(SITE)

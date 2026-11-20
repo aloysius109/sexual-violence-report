@@ -9,6 +9,7 @@ import subprocess
 import tempfile
 import pandas as pd
 from bs4 import BeautifulSoup
+from publish_summary import publish_summary_html
 
 ROOT=Path(__file__).resolve().parent
 
@@ -79,10 +80,18 @@ def validate():
     if not json.loads((ROOT/"data/edition.json").read_text())["published_url"]:
         s=s.replace('href="../index.html"','href="../_site/index.html"')
         p.write_text(s,encoding="utf-8")
+    publish_summary_html(
+        p.read_text(encoding="utf-8"), site,
+        "https://aloysius109.github.io/sexual-violence-report/",
+    )
+    required.append("summary/index.html")
+    assert (site/"summary/index.html").is_file(),"summary/index.html"
     manifest={"review_edition":"2026-11-06","files":{
         p.relative_to(site).as_posix():hashlib.sha256(p.read_bytes()).hexdigest()
         for p in site.rglob("*") if p.is_file()}}
-    (ROOT/"review-manifest.json").write_text(json.dumps(manifest,indent=2),encoding="utf-8")
+    (ROOT/"review-manifest.json").write_text(
+        json.dumps(manifest,indent=2),encoding="utf-8",newline="\n"
+    )
     print(f"PASS: {len(required)} report pages; all relative file links; {images} chart references with alt text; 138 WHO countries; missing-year gap; unique UNODC records; standalone Medium handoff.")
 
 

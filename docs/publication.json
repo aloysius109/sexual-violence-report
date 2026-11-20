@@ -1,6 +1,6 @@
 {
   "review_edition": "2026-11-06",
-  "staged_at_utc": "2026-11-20T11:58:56.297195+00:00",
+  "staged_at_utc": "2026-11-20T14:19:20.015670+00:00",
   "files": {
     "children.html": "28b7849ddfb1bad6797234e86fd61252c8abde1760c3c479b2690175730ea27b",
     "index.html": "02c447b365556a01e6f691aa40c014d8d2caadb1642ec486a4a68ffb78472f98",
@@ -36,6 +36,7 @@
     "data/who-coverage.csv": "ae065ca53d6eb7dfe477a5b1a3a109eecc21da036fc34c125788e2afa62a2227",
     "data/who-non-partner-sexual-violence.csv": "16537460072f5fd9bf044b5222d8546e1aa3fd38d4d6d0658108f398ba5630f4",
     "data/who-underlying-studies.csv": "e254f8ade020b7b49e014f609bbe9c31bd966742f4cf00ffb71d14fbe696a5ab",
+    "summary/index.html": "476df5053725ebd7d9004d545318e70ee243250d2ea22cab01cdf91101547303",
     "site_libs/bootstrap/bootstrap-a26229680dd6484443fc7b0600df58db.min.css": "be8629e4f38ee6d89e2231935ae66ad5e8214d1eee01396b369a35e4ef3fe000",
     "site_libs/bootstrap/bootstrap-icons.css": "01253947f506e030589e4f33fc7ec7ccdfb9505e2e596dedf16445f12e243c0a",
     "site_libs/bootstrap/bootstrap-icons.woff": "f55513b7b591cb84a3b87ff0e34ea24d4831d6fedc22e54b911ca64b5b544a15",

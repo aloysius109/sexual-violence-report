@@ -20,6 +20,7 @@ REQUIRED = [
     "children.html",
     "justice.html",
     "methods.html",
+    "summary/index.html",
 ]
 
 
@@ -166,7 +167,9 @@ def stage():
         "staged_at_utc": datetime.now(timezone.utc).isoformat(),
         "files": current,
     }
-    (DEST / PUBLICATION_MANIFEST).write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    (DEST / PUBLICATION_MANIFEST).write_text(
+        json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n"
+    )
     validate()
 
 
