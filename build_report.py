@@ -239,9 +239,12 @@ def medium(published_url):
         source=source.replace("FULL_REPORT_LINK",published_url.rstrip("/")+"/")
     else:
         source=source.replace("FULL_REPORT_LINK","../index.html")
-    for name in re.findall(r"assets/([^\s)]+\.png)",source):
-        shutil.copy2(ASSETS/name,images/name)
-        source=source.replace("assets/"+name,"images/"+name)
+    for old in images.glob("*.png"):old.unlink()
+    # Number the Medium copies by figure order, so filenames match figures in the article.
+    for figure,name in enumerate(re.findall(r"assets/([^\s)]+\.png)",source),start=1):
+        numbered=f"{figure:02d}-"+re.sub(r"^\d+-","",name)
+        shutil.copy2(ASSETS/name,images/numbered)
+        source=source.replace("assets/"+name,"images/"+numbered)
     (target/"article.qmd").write_text(source,encoding="utf-8")
     (target/"PUBLISHING.txt").write_text(
         "MEDIUM EDITION — Sexual violence in perspective\n\n"

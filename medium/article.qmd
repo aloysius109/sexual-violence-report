@@ -38,7 +38,7 @@ The Crime Survey for England and Wales estimates that **2.1% of people aged 16 a
 
 This redesigned measure includes rape or penetration, being forced to penetrate, unwanted touching, exposure and image-related experiences. ONS states that it is **not comparable with previously published measures**. [ONS latest crime bulletin](https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingjune2026).
 
-![](images/05-latest-survey.png){fig-alt="Redesigned sexual-victimisation prevalence among people aged 16+, women and men, England and Wales, year ending March 2026."}
+![](images/02-latest-survey.png){fig-alt="Redesigned sexual-victimisation prevalence among people aged 16+, women and men, England and Wales, year ending March 2026."}
 
 *Figure 2. A new sexual-victimisation series, including experiences beyond contact assault. Source: ONS; CSEW year ending March 2026. Do not calculate a change from the former measure.*
 
@@ -56,13 +56,13 @@ The detailed 2025 release also shows higher prevalence among younger people. It 
 
 UNICEF estimates that **more than 370 million girls and women alive in 2024**, around one in eight, experienced rape or sexual assault before age 18. Its corresponding estimate for boys and men is **240–310 million**, around one in eleven. These totals include adults recalling childhood; they are not annual counts among today's children. [UNICEF global estimates](https://www.unicef.org/press-releases/over-370-million-girls-and-women-globally-subjected-rape-or-sexual-assault-children).
 
-![](images/06-childhood-worldwide.png){fig-alt="UNICEF regional estimates for girls and women who experienced rape or sexual assault before age 18."}
+![](images/04-childhood-worldwide.png){fig-alt="UNICEF regional estimates for girls and women who experienced rape or sexual assault before age 18."}
 
 *Figure 4. Regional childhood-experience estimates among girls and women, UNICEF 2024. These are lifetime experiences, not annual rates among current children. Underlying coverage varies.*
 
 In England and Wales, the redesigned childhood survey estimates that **9.1% of adults aged 18 and over**, around **4.3 million people**, experienced sexual abuse before age 18. The estimates are 13.9% for women and 4.1% for men. This broader category includes non-contact abuse. [ONS childhood bulletin](https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/abuseduringchildhoodinenglandandwales/march2024).
 
-![](images/07-childhood-england-wales.png){fig-alt="Adults in England and Wales reporting sexual abuse before age 18, including non-contact abuse."}
+![](images/05-childhood-england-wales.png){fig-alt="Adults in England and Wales reporting sexual abuse before age 18, including non-contact abuse."}
 
 *Figure 5. Retrospective childhood sexual abuse among adults, CSEW year ending March 2024. Source: ONS. The newer population and pre-18 questions prevent comparison with the former pre-16 series.*
 
@@ -74,7 +74,7 @@ England's children's services recorded 29,560 children assessed as affected by s
 
 The Home Office initially reported charge/summons outcomes for **3.4% of rape offences recorded in the year ending March 2026**. For the previous year's recording cohort, the rate rose from **2.8% at first release to 5.2% in the later update** as more investigations concluded. [Home Office outcomes](https://www.gov.uk/government/statistics/crime-outcomes-in-england-and-wales-2025-to-2026/crime-outcomes-in-england-and-wales-2025-to-2026).
 
-![](images/08-outcome-maturity.png){fig-alt="Initial and updated rape charge/summons rates illustrating how outcome cohorts mature."}
+![](images/06-outcome-maturity.png){fig-alt="Initial and updated rape charge/summons rates illustrating how outcome cohorts mature."}
 
 *Figure 6. England and Wales rape outcomes. The 2025 figures describe the same recording cohort at two snapshots. A charge is not a conviction; the updated figure is not necessarily final. Source: Home Office, section 2.4.*
 
