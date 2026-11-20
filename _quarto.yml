@@ -8,13 +8,11 @@ project:
     - children.qmd
     - justice.qmd
     - methods.qmd
-    - medium/article.qmd
   resources:
     - "!docs/**"
+    - "!medium/**"
     - data/**
     - assets/**
-    - medium/images/**
-    - medium/PUBLISHING.txt
 website:
   title: "Sexual violence in perspective"
   description: "Worldwide evidence and a detailed UK view, with adults and childhood experiences presented separately."

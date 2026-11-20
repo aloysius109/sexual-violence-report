@@ -5,6 +5,8 @@ from urllib.parse import urlsplit, unquote
 import hashlib
 import json
 import shutil
+import subprocess
+import tempfile
 import pandas as pd
 from bs4 import BeautifulSoup
 
@@ -23,8 +25,9 @@ class Links(HTMLParser):
 
 def validate():
     site=ROOT/"_site"
-    required=["index.html","worldwide.html","uk.html","children.html","justice.html","methods.html","medium/article.html"]
+    required=["index.html","worldwide.html","uk.html","children.html","justice.html","methods.html"]
     for name in required:assert (site/name).is_file(),name
+    assert not (site/"medium").exists(),"Medium handoff must not be published with the website"
     broken=[];images=0
     for page in site.rglob("*.html"):
         parser=Links();parser.feed(page.read_text(encoding="utf-8"))
@@ -47,11 +50,21 @@ def validate():
     recorded=pd.read_csv(ROOT/"data/unodc-recorded-rates.csv")
     assert not recorded.duplicated(["code","year","category"]).any()
     assert not recorded.code.eq("GBR").any(),"Do not invent an aggregate UK police series"
-    medium=site/"medium/article.html"
-    assert 'src="data:image/' in medium.read_text(encoding="utf-8"),"Medium preview must be standalone"
-    soup=BeautifulSoup(medium.read_text(encoding="utf-8"),"html.parser")
+    with tempfile.TemporaryDirectory(prefix="sexual-violence-medium-") as temporary_directory:
+        render_dir=Path(temporary_directory)
+        shutil.copy2(ROOT/"medium/article.qmd",render_dir/"article.qmd")
+        shutil.copytree(ROOT/"medium/images",render_dir/"images")
+        subprocess.run(["quarto","render","article.qmd"],cwd=render_dir,check=True)
+        rendered_medium=(render_dir/"article.html").read_text(encoding="utf-8")
+    assert 'src="data:image/' in rendered_medium,"Medium preview must be standalone"
+    soup=BeautifulSoup(rendered_medium,"html.parser")
     main=soup.find("main")
     assert main is not None
+    embedded_images=main.find_all("img")
+    assert len(embedded_images)==6,"Medium handoff must contain six figures"
+    assert all(image.get("src","").startswith("data:image/") for image in embedded_images),"Every Medium figure must be embedded"
+    article_text=main.get_text(" ",strip=True)
+    assert all(article_text.count(f"Figure {number}.")==1 for number in range(1,7)),"Medium figure captions must run from Figure 1 to Figure 6"
     styles="".join(str(style) for style in soup.head.find_all("style"))
     preview=('<!doctype html><html lang="en-GB"><head><meta charset="utf-8">'
              '<meta name="viewport" content="width=device-width,initial-scale=1">'
@@ -70,7 +83,7 @@ def validate():
         p.relative_to(site).as_posix():hashlib.sha256(p.read_bytes()).hexdigest()
         for p in site.rglob("*") if p.is_file()}}
     (ROOT/"review-manifest.json").write_text(json.dumps(manifest,indent=2),encoding="utf-8")
-    print(f"PASS: {len(required)} pages; all relative file links; {images} chart references with alt text; 138 WHO countries; missing-year gap; unique UNODC records; standalone Medium HTML.")
+    print(f"PASS: {len(required)} report pages; all relative file links; {images} chart references with alt text; 138 WHO countries; missing-year gap; unique UNODC records; standalone Medium handoff.")
 
 
 if __name__=="__main__":validate()

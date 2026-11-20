@@ -20,7 +20,6 @@ REQUIRED = [
     "children.html",
     "justice.html",
     "methods.html",
-    "medium/article.html",
 ]
 
 
@@ -154,6 +153,13 @@ def stage():
         path = safe_path(DEST, relative)
         if path.is_file() or path.is_symlink():
             path.unlink()
+        parent = path.parent
+        while parent != DEST:
+            try:
+                parent.rmdir()
+            except OSError:
+                break
+            parent = parent.parent
 
     manifest = {
         "review_edition": review_manifest["review_edition"],
